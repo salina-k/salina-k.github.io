@@ -4,61 +4,71 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My portfolio</title>
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel ="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Hello World!</h1>
-    <p>I'm hosted with GitHub Pages.</p>
+    <div class="title">
+        <h1>SALINA KARKI</h1>
 
-    <h2>My projects</h2>
-    <ul id="repos"></ul>
+    </div>
 
-<script>
-    // create an element
-    const createNode = (elem) => {
-        return document.createElement(elem);
-    };
-
-    // append an element to parent
-    const appendNode = (parent, elem) => {
-        parent.appendChild(elem);
-    }
-
-    // List Element
-    const ul = document.querySelector('#repos');
-
-    // GitHub API URL
-    const url = 'https://api.github.com/users/salina-k/repos?per_page=50';
-
-    // make the API call
-    fetch(url)
-        .then(res => res.json())
-        .then(data => {
-            // iterate over users
-            data.map((user) => {
-                // create the elements
-                let li = createNode('li'),
+    <div class="container">
+        <div class="box">
+            <div class="imgBox">
+                <img src="./images/profile.JPG" alt="img" height="100px" width="100px">
+            </div>
             
-                    span = createNode('span');
-                
-                span.innerText = user.name;
-                // append all elements
-                appendNode(li, span);
-                appendNode(ul, li);
-            });
-        }).catch(err => {
-            console.error('Error: ', err);
-        });
+            <div class="social-media">
+                <p><b>CONTACT ME</b></p>
+                <ul>
+                    <li><a href="https://www.facebook.com/salina.karki.37"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="https://github.com/salina-k"><i class="fa fa-github"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/salina-karki-32112b176/"><i class="fa fa-linkedin"></i></a></li>
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
 
+    <div class="container">
+        <div class="box">
+            <h1>EDUCATION</h1>
+            <p class="education">Bachelors In Computer Engineering<br>Kathmandu Engineering College<br>2016-2020</p>
+            <p class="education">High school <br>Liverpool College<br></p>
+            <p class="education">School<br>Societal H.S. School</p>
+        </div>
+    </div>
 
-// fetch('https://api.github.com/users/salina-k/repos')
-// .then(response => response.json())
-// .then(data => {
-//   console.log(data) // Prints result from `response.json()` in getRequest
+    <div class="container">
+        <div class="box">
+            <h1>INTERESTS</h1>
+            <ul class="interest">
+                <li>Web Application</li>
+                <li>Software Engineering</li>
+                <li>Machine Learning</li>
+                <Li>Python</Li>
 
-// })
-// .catch(error => console.error(error))
+            </ul>
+        </div>
+    </div>
 
-</script>
+    <div class="main-container">
+        <div class="box">
+            <div class="projects">
+                <h1>Bio</h1>
+                <p> I am currently a 7th semester Computer engineering student. I aspire to become a full stack software developer and I am also an AI/ML enthusiast. </p><br>
+                <h1>Experience</h1>
+                <p>
+                    • Content Writing Ambassador at Girls in Tech Nepal (January 2020 - Current).<br>
+                    • Joint secretary at Mount Makalu Leo Club (2017-2018), Kathmandu, Nepal.
+                </p><br>
+                <h2>My Projects</h2>
+                <ul id="repos"></ul>
+            </div>
+        </div>
+    </div>    
+
+<script src="script.js"></script>
 </body>
 </html>

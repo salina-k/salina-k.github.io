@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+}
+body{
+    background-color: antiquewhite;
+}
+
+.title{
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(./images/bg2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh; 
+    width: 100%;
+}
+.title h1{
+    margin-left: 80px;
+    margin-top: 130px;
+    color: white;
+    letter-spacing: 5px;
+}
+.container{
+    position: relative;
+    height: 280px;
+    width: 250px;
+    margin: 40px auto;
+    background: white;
+    left: -36%;
+    top: 20px;
+    border-radius: 5%;
+   
+}
+.container .box{
+    position: relative;
+}
+.imgBox img{
+    border-radius: 50%;
+    position: relative;
+    left: 28%;
+    margin-top: 10px;
+}
+.social-media p{
+    margin-top: 20px;
+    text-align: center;
+}
+.social-media ul li{
+    margin-top: 30px;
+    margin-left: 48px;
+    float: left;
+    padding-right: -10px;
+}
+.fa-facebook, .fa-facebook-square {
+    color: #3b5998;
+    
+}
+.fa-linkedin, .fa-linkedin-square {
+    color: #007bb6;
+}
+.fa-github, .fa-github-square {
+    color: #222729;
+}
+.container .box h1{
+    font-size: large;
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bolder;
+}
+.container .box .education  {
+    border-bottom: 5px gray;
+    margin-left: 10px;
+    margin-top: 10px;
+    line-height: 1.5;
+    font-size: 14px;
+    border-bottom: 1px dashed gray ;
+}
+.container .box .interest li{
+    margin-top: 15px;
+    margin-left: 25px;
+    line-height: 1.8; 
+}
+
+.main-container{
+    margin: 40px auto;
+    background: white;
+    border-radius: 1%;
+    position: relative;
+    top: -940px;
+    left: 120px;
+    height: 600px;
+    width: 800px;
+}
+.projects{
+    margin-left: 20px;
+    line-height: 1.8;
+    
+}
+.main-container .box .projects h2,h1{
+    font-weight: bolder;
+    margin-left: 10px;
+    color: rgb(121, 34, 34);
+}
+.main-container .box .projects p{
+    width: 90%;
+    margin-left: 10px;
+}
+.main-container .box .projects #repos{
+    margin-left: 25px;
+}
