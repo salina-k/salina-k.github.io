@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&display=swap');
 
 *{
@@ -9,10 +8,12 @@
 }
 body{
     background-color: antiquewhite;
+    margin: 0 !important;
+    padding: 0 !important;
 }
 
 .title{
-    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(./images/bg2.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(./images/bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 50vh; 
@@ -23,6 +24,7 @@ body{
     margin-top: 130px;
     color: white;
     letter-spacing: 5px;
+    font-size: 45px;
 }
 .container{
     position: relative;
@@ -33,12 +35,11 @@ body{
     left: -36%;
     top: 20px;
     border-radius: 5%;
-   
 }
 .container .box{
     position: relative;
 }
-.imgBox img{
+.imgBox img{    /* profile image */
     border-radius: 50%;
     position: relative;
     left: 28%;
@@ -47,6 +48,7 @@ body{
 .social-media p{
     margin-top: 20px;
     text-align: center;
+    font-size: 15px;
 }
 .social-media ul li{
     margin-top: 30px;
@@ -83,31 +85,207 @@ body{
     margin-left: 25px;
     line-height: 1.8; 
 }
-
 .main-container{
     margin: 40px auto;
     background: white;
     border-radius: 1%;
     position: relative;
     top: -940px;
-    left: 120px;
-    height: 600px;
+    left: 130px;
+    height: 780px;
     width: 800px;
+    margin-bottom: 0;
 }
 .projects{
     margin-left: 20px;
     line-height: 1.8;
-    
 }
-.main-container .box .projects h2,h1{
+.main-container .box .projects h1{
     font-weight: bolder;
+    font-size: 26px;
     margin-left: 10px;
     color: rgb(121, 34, 34);
 }
 .main-container .box .projects p{
     width: 90%;
     margin-left: 10px;
+    text-align: justify;
+
 }
 .main-container .box .projects #repos{
     margin-left: 25px;
+}
+
+/* Media Queries  */
+@media screen and (max-width:1140px){
+    .main-container{
+        position: relative;
+        top: -940px;
+        left: 120px;
+        height: 820px;
+        width: 690px;
+    }
+}
+@media screen and (min-width:851px) and (max-width: 980px){
+    .main-container{
+        position: relative;
+        top: -940px;
+        left: 149px;
+        height: 850px;
+        width: 535px;
+    }
+    .container{
+        left: -31%;
+    }
+    .main-container .box .projects h1{
+        font-weight: bold;
+        font-size: 23px;
+    }
+    .main-container .box .projects p{
+        font-size: 15px;
+    }
+    .main-container .box .projects #repos span{
+        font-size: 15px;
+    }
+}
+@media screen and (min-width:769px) and (max-width: 850px){
+    .main-container{
+        position: relative;
+        top: -940px;
+        left: 159px;
+        height: 850px;
+        width: 450px;
+    }
+    .container{
+        left: -31%;
+    }
+    .main-container .box .projects h1{
+        font-weight: bold;
+        font-size: 22px;
+    }
+    .main-container .box .projects p{
+        font-size: 14px;
+    }
+    .main-container .box .projects #repos span{
+        font-size: 14px;
+    }
+}
+@media screen and (max-width:768px){
+    .title h1{
+        font-size: 35px;
+    }
+    .main-container{
+        position: static;
+    }
+    .container{
+        left: 10px;
+        height: 290px;
+        width: 450px;
+    }
+    .imgBox img{    
+        left: 38%;
+    }
+    .social-media ul li{
+            margin-left: 58px;
+            padding-left: 40px;
+    }
+    .container .box .education  {
+        line-height: 1.8;
+        font-size: 14px;
+    }
+    .main-container{
+        height: 800px;
+        width: 620px;
+    }
+    .container .box .interest li{
+        font-size: 14px;
+        margin-top: 25px;
+    }
+    .main-container .box .projects h1{
+        font-weight: bold;
+        font-size: 25px;
+    }
+    .main-container .box .projects p{
+        font-size: 14px;
+    }
+    .main-container .box .projects #repos span{
+        font-size: 14px;
+    }
+}
+@media screen and (min-width:526px) and (max-width: 767px){
+    .title h1{
+        font-size: 20px;
+        margin-left:15px;
+    }
+    .main-container .box .projects h1{
+        font-weight: bold;
+        font-size: 16px;
+    }  
+    .main-container{
+        height: 800px;
+        width: 460px;
+        position: static;
+    }
+}
+@media screen and (min-width:425px) and (max-width: 525px){
+    .title h1{
+        font-size: 20px;
+        margin-left:15px;
+    }
+    .container{
+        left: -3px;
+        width: 340px;
+    }
+    .social-media ul li{
+            margin-left: 45px;
+            padding-left: 30px;
+    }
+    .main-container{
+        height: 850px;
+        width: 360px;
+        position: static;
+    }
+    .main-container .box .projects h1{
+        font-weight: bold;
+        font-size: 18px;
+    }  
+}
+@media screen and (min-width:320px) and (max-width: 424px){
+    .title{
+        height: 35vh;
+    }
+    .title h1{
+        margin-left: 30px;
+        margin-top: 80px;
+        font-size: 15px;
+    }
+    .container{
+        left: -3px;
+        width: 270px;
+    }
+    .imgBox img{    
+        left: 30%;
+    }
+    .social-media ul li{
+            margin-left: 40px;
+            padding-left: 20px;
+    }
+    .container .box h1{
+        font-size: 16px;
+    }
+    .container .box .education {
+        font-size: 12px;
+    }
+    .main-container{
+        height: 760px;
+        width: 300px;
+        position: static;
+    }
+    .main-container .box .projects h1{
+        font-weight: bold;
+        font-size: 14px;
+    } 
+    .main-container .box .projects p,.main-container .box .projects #repos span{
+        font-size: 11px;
+    }  
 }
