@@ -92,7 +92,7 @@ body{
     position: relative;
     top: -940px;
     left: 130px;
-    height: 780px;
+    height: 799px;
     width: 800px;
     margin-bottom: 0;
 }
@@ -110,7 +110,7 @@ body{
     width: 90%;
     margin-left: 10px;
     text-align: justify;
-
+    font-size: 15px;
 }
 .main-container .box .projects #repos{
     margin-left: 25px;
@@ -152,16 +152,16 @@ body{
     .main-container{
         position: relative;
         top: -940px;
-        left: 159px;
-        height: 850px;
-        width: 450px;
+        left: 150px;
+        height: 875px;
+        width: 455px;
     }
     .container{
         left: -31%;
     }
     .main-container .box .projects h1{
         font-weight: bold;
-        font-size: 22px;
+        font-size: 20px;
     }
     .main-container .box .projects p{
         font-size: 14px;
@@ -223,9 +223,12 @@ body{
     }  
     .main-container{
         height: 800px;
-        width: 460px;
+        width: 500px;
         position: static;
     }
+    .main-container .box .projects p{
+        font-size: 13px;
+    } 
 }
 @media screen and (min-width:425px) and (max-width: 525px){
     .title h1{
@@ -247,8 +250,11 @@ body{
     }
     .main-container .box .projects h1{
         font-weight: bold;
-        font-size: 18px;
+        font-size: 16px;
     }  
+    .main-container .box .projects p{
+        font-size: 12px;
+    }
 }
 @media screen and (min-width:320px) and (max-width: 424px){
     .title{
@@ -285,7 +291,8 @@ body{
         font-weight: bold;
         font-size: 14px;
     } 
-    .main-container .box .projects p,.main-container .box .projects #repos span{
+    .main-container .box .projects p,.main-container .box .projects #repos span, .container .box .interest li{
         font-size: 11px;
+        line-height: 1.5;
     }  
 }
